@@ -286,11 +286,11 @@ available translations, see |thlang/texts.txt| file.
     map-header <x> <y> <off/n/s/e/w/ne/nw/se/sw/center>
     map-header-bg <on/off>
     map-image <x> <y> <n/s/e/w/ne/nw/se/sw/center> <filename>
-    statistics <explo/topo/carto/copyright all/off/number>
-               <explo/topo-length on/hide/off>
-               <carto/copyright-count on/hide/off>
+    statistics <explo/topo/carto/copyright> <all/off/number>
+    statistics <explo-length/topo-length> <on/hide/off>
+    statistics <carto-count/copyright-count> <on/hide/off>
     scale-bar <length> <units>
-    survey-level <N/all>
+    survey-level <number/all>
     language <xx[_YY]>
     colo[u]r-model <cmyk/rgb/grayscale>
     colo[u]r <item> <colour>
@@ -511,12 +511,12 @@ endlayout|
   * |legend-columns <number>| = adjusts the number of legend columns
     (M, A; default: |2|)
   * |map-comment <string>| = optional comment displayed at the map header (M)
-  * |statistics <explo/topo/carto/copyright all/off/number>| or
-  * |statistics <explo/topo-length on/hide/off>| = display some basic
+  * |statistics <explo/topo/carto/copyright> <all/off/number>| or
+  * |statistics <explo-length/topo-length> <on/hide/off>| = display some basic
     statistics; if set to off, team members are sorted \NEW{5.4}alphabetically;
     otherwise according to their contribution to exploration and surveying
     (M, A; default: |hide|)
-  * |statistics <carto/copyright-count on/hide/off>| = \NEW{5.5.4} display number of scraps
+  * |statistics <carto-count/copyright-count> <on/hide/off>| = \NEW{5.5.4} display number of scraps
     for given author/copyright string; if set to off, items are sorted 
     alphabetically; otherwise by number of scraps
     (M, A; default: |hide|)
@@ -578,7 +578,7 @@ endlayout|
     The points with distance changed most during transformation are displayed
     orange. If |scrap-names| is specified, scrap names are shown for each scrap,
     |station-names| displays name of each survey station.
-  * |survey-level <N/all>| = |N| is the number of survey levels displayed
+  * |survey-level <number/all>| = the number of survey levels displayed
                              next to the station name (M, A; default: |0|).
 
   {\it PDF related:}\Nobreak
